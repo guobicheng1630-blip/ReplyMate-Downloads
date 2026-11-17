@@ -1,32 +1,48 @@
-# ReplyMate
+# ReplyMate · Mac 截图与回复助手
 
-Mac 上的截图、翻译解释与聊天回复助手。
+## ⬇️ [下载安装包 · 1.28.2 测试版](https://github.com/guobicheng1630-blip/ReplyMate-Downloads/releases/download/v1.28.2/ReplyMate-macOS-arm64.zip)
 
-**[下载测试版与查看更新说明](https://github.com/guobicheng1630-blip/ReplyMate-Downloads/releases)**
+**点击上方链接即可直接下载，无需登录 GitHub。下载文件名应为 `ReplyMate-macOS-arm64.zip`。**
 
-此仓库仅发布下载包和版本说明，源码保持私有。
+适用于 **Apple 芯片 Mac（M1 或更新）· macOS 14 及以上**。暂不支持 Intel Mac 或 Windows。
 
-## 系统要求
+> **不要下载 Source code (zip)、Source code (tar.gz)，也不要使用 Code → Download ZIP。**
+> 这些不是可安装的软件。本仓库仅提供安装包与说明，源码保持私有。使用 ReplyMate **不需要 Xcode、不需要终端命令，也不需要自行编译**。
 
-Apple 芯片 Mac（M1 或更新），macOS 14 及以上。当前不提供 Intel 版本。
+[查看版本说明与其他版本](https://github.com/guobicheng1630-blip/ReplyMate-Downloads/releases)
 
-## 安装
+## 安装只需三步
 
-在 Releases 中下载 `ReplyMate-macOS-arm64.zip`，解压后将 ReplyMate.app 放入「应用程序」。更新前完全退出旧版，再替换应用。个人设置与截图历史保存在应用之外。
+1. 点击顶部「下载安装包」，下载 `ReplyMate-macOS-arm64.zip`。
+2. 双击 ZIP 解压，得到 **ReplyMate.app**。
+3. 将 **ReplyMate.app** 拖入访达的「应用程序」，再双击打开。
 
-这是未经 Apple 公证的测试版，macOS 可能阻止首次打开。请勿关闭 Gatekeeper 或 SIP；需要无警告安装体验，请等待公证版本。
+如果解压后没有看到 ReplyMate.app，说明下载的不是正确安装包，请回到顶部重新下载。
 
-## 使用
+### 如果 macOS 阻止打开
 
-- 截图、多图收集、截图历史与文字搜索。
-- 帮我回复、读懂截图、中英对照、继续追问。
-- 需要在设置中自行配置支持图片的 AI 服务、API Key 和模型，并承担相应 API 费用。
-- 填入聊天框不会自动发送。
-- 菜单栏「检查更新」，或设置 → 通用 → 软件更新。启动时及每 6 小时自动检查，可关闭。
-- 从 1.28.1 起可在软件中点击「更新并重启」，下载校验后确认安装，无需手动替换。1.27.0 用户需手动安装新版一次。设置、历史与钥匙串保留；固定签名和安装位置保持不变，系统权限仍以 macOS 实际状态为准。
+当前是**未经过 Apple 公证的测试版**，首次打开可能被系统阻止；这不代表需要安装 Xcode或编译源码。请保留系统安全保护，不要关闭 Gatekeeper 或 SIP。遇到阻止提示时，请记录完整提示并参考 [Apple 的说明](https://support.apple.com/zh-cn/102445)；希望使用经过苹果公证的版本，可等待后续正式版。
 
-## 数据与权限
+## 首次使用
+
+- 在设置中配置支持图片的 AI 服务、API Key 和模型；API 使用费用由你自己的服务账户承担。
+- 截图时按系统提示授权屏幕录制。原聊天框填入功能需要辅助功能权限。
+- 支持截图、多图收集、截图历史与文字搜索、聊天回复、翻译解释和继续追问。
+- **填入聊天框不会自动发送。**
+- 微信部分版本的截图可能黑色或透明，属于已知兼容性限制。
+
+## 以后如何更新
+
+在 **设置 → 通用 → 软件更新** 点击「更新并重启」，下载校验后确认安装，软件会自动重启，无需再次去 GitHub 下载替换。
+
+- 保留设置、截图历史和钥匙串中的 API 密钥。
+- 保持同一签名和「应用程序」安装位置；权限最终由 macOS 管理。
+- 更新前请复制需要保留的未保存输入和生成结果。
+- 1.27.0 用户需手动安装新版一次；1.28.1 用户请关闭设置弹窗，从菜单栏更新入口升级。
+- 自动检查在启动时及每 6 小时进行，可在设置中关闭。
+
+## 数据与隐私
 
 下载包不包含开发者的密钥、聊天记录或截图。API 密钥保存在本机钥匙串，截图历史保存在本机。只有主动调用 AI 时才发送相应内容到你配置的服务。更新检查仅访问公开 GitHub 版本信息。
 
-截图需要屏幕录制权限；原输入框填入需要辅助功能权限。微信部分版本的截图可能黑色或透明，详情见对应版本说明。
+安装包校验文件：[SHA256SUMS.txt](https://github.com/guobicheng1630-blip/ReplyMate-Downloads/releases/download/v1.28.2/SHA256SUMS.txt)。
