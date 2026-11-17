@@ -1,2 +1,32 @@
-# ReplyMate-Downloads
-Public beta downloads and release notes for ReplyMate on macOS. Source code is maintained privately.
+# ReplyMate
+
+Mac 上的截图、翻译解释与聊天回复助手。
+
+**[下载测试版与查看更新说明](https://github.com/guobicheng1630-blip/ReplyMate-Downloads/releases)**
+
+此仓库仅发布下载包和版本说明，源码保持私有。
+
+## 系统要求
+
+Apple 芯片 Mac（M1 或更新），macOS 14 及以上。当前不提供 Intel 版本。
+
+## 安装
+
+在 Releases 中下载 `ReplyMate-macOS-arm64.zip`，解压后将 ReplyMate.app 放入「应用程序」。更新前完全退出旧版，再替换应用。个人设置与截图历史保存在应用之外。
+
+这是未经 Apple 公证的测试版，macOS 可能阻止首次打开。请勿关闭 Gatekeeper 或 SIP；需要无警告安装体验，请等待公证版本。
+
+## 使用
+
+- 截图、多图收集、截图历史与文字搜索。
+- 帮我回复、读懂截图、中英对照、继续追问。
+- 需要在设置中自行配置支持图片的 AI 服务、API Key 和模型，并承担相应 API 费用。
+- 填入聊天框不会自动发送。
+- 菜单栏「检查更新」，或设置 → 外观 → 软件更新。启动时及每 6 小时自动检查，可关闭。
+- 新版在菜单和设置中显示；下载安装仍由你确认操作。
+
+## 数据与权限
+
+下载包不包含开发者的密钥、聊天记录或截图。API 密钥保存在本机钥匙串，截图历史保存在本机。只有主动调用 AI 时才发送相应内容到你配置的服务。更新检查仅访问公开 GitHub 版本信息。
+
+截图需要屏幕录制权限；原输入框填入需要辅助功能权限。微信部分版本的截图可能黑色或透明，详情见对应版本说明。
