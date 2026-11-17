@@ -1,8 +1,8 @@
 # ReplyMate · Mac 截图与回复助手
 
-## ⬇️ [下载安装包 · 1.28.2 测试版](https://github.com/guobicheng1630-blip/ReplyMate-Downloads/releases/download/v1.28.2/ReplyMate-macOS-arm64.zip)
+## ⬇️ [下载 DMG 安装包 · 1.28.2 测试版](https://github.com/guobicheng1630-blip/ReplyMate-Downloads/releases/download/v1.28.2/ReplyMate-macOS-arm64.dmg)
 
-**点击上方链接即可直接下载，无需登录 GitHub。下载文件名应为 `ReplyMate-macOS-arm64.zip`。**
+**点击上方链接即可直接下载，无需登录 GitHub。下载文件名应为 `ReplyMate-macOS-arm64.dmg`。**
 
 适用于 **Apple 芯片 Mac（M1 或更新）· macOS 14 及以上**。暂不支持 Intel Mac 或 Windows。
 
@@ -11,17 +11,33 @@
 
 [查看版本说明与其他版本](https://github.com/guobicheng1630-blip/ReplyMate-Downloads/releases)
 
-## 安装只需三步
+## 安装步骤（无需 Xcode）
 
-1. 点击顶部「下载安装包」，下载 `ReplyMate-macOS-arm64.zip`。
-2. 双击 ZIP 解压，得到 **ReplyMate.app**。
-3. 将 **ReplyMate.app** 拖入访达的「应用程序」，再双击打开。
+1. 点击顶部链接下载 `ReplyMate-macOS-arm64.dmg`，双击打开。
+2. 在白色安装窗口中，将左侧 **ReplyMate** 图标拖到右侧 **应用程序**。
+3. 等待复制完成，从访达「应用程序」打开 ReplyMate，不要直接从安装磁盘运行。
+4. 安装磁盘可以推出。窗口里的「安装说明」可随时打开阅读。
 
-如果解压后没有看到 ReplyMate.app，说明下载的不是正确安装包，请回到顶部重新下载。
+## 首次打开被 macOS 拦截怎么办？
 
-### 如果 macOS 阻止打开
+当前测试版未经过 Apple 公证。仅在确认来自本仓库、愿意运行测试版时，由你本人按以下步骤操作；不希望创建例外，可以等待公证版。
 
-当前是**未经过 Apple 公证的测试版**，首次打开可能被系统阻止；这不代表需要安装 Xcode或编译源码。请保留系统安全保护，不要关闭 Gatekeeper 或 SIP。遇到阻止提示时，请记录完整提示并参考 [Apple 的说明](https://support.apple.com/zh-cn/102445)；希望使用经过苹果公证的版本，可等待后续正式版。
+**提示“无法验证开发者”或“无法验证是否包含恶意软件”：**
+
+1. 先尝试打开「应用程序」里的 ReplyMate，关闭拦截提示。
+2. 打开 **系统设置 → 隐私与安全性**，向下滚动到「安全性」。
+3. 在 ReplyMate 对应提示旁点击 **仍要打开（Open Anyway）**。
+4. 完成系统要求的身份验证，再点击「打开」。
+
+入口通常在尝试打开后约一小时内提供。没有看到时再尝试打开一次；公司或学校管理的电脑可能限制此操作，需要联系管理员。这是针对该应用的单独例外，不需要关闭 Gatekeeper、SIP，也不要执行清除隔离的终端命令。
+
+**提示“已损坏”、检测到恶意软件或“会损坏你的电脑”：**不要强行打开；重新从官方链接下载并反馈完整报错，不要当作普通开发者验证问题处理。
+
+**提示不支持此 Mac：**检查是否为 Apple 芯片、macOS 是否为 14 或更新版本。当前不支持 Intel。
+
+**要求 Xcode、开发工具许可或编译：**通常下载错了源码包。回到顶部下载 DMG，不要下载 Source code。
+
+参考：[Apple 安全打开 App](https://support.apple.com/en-ie/102445)、[Apple 的“仍要打开”步骤](https://support.apple.com/en-gb/guide/mac-help/mh40617/mac)。
 
 ## 首次使用
 
@@ -45,4 +61,4 @@
 
 下载包不包含开发者的密钥、聊天记录或截图。API 密钥保存在本机钥匙串，截图历史保存在本机。只有主动调用 AI 时才发送相应内容到你配置的服务。更新检查仅访问公开 GitHub 版本信息。
 
-安装包校验文件：[SHA256SUMS.txt](https://github.com/guobicheng1630-blip/ReplyMate-Downloads/releases/download/v1.28.2/SHA256SUMS.txt)。
+DMG 校验文件：[DMG-SHA256.txt](https://github.com/guobicheng1630-blip/ReplyMate-Downloads/releases/download/v1.28.2/DMG-SHA256.txt)。
